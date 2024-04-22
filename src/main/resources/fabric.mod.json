@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "gaiaodyssey",
+	"version": "${version}",
+	"name": "Gaia Odyssey",
+	"description": "This mod invites you to embark on a journey of discovery into the heart of Gaïa, a captivating world brimming with wonders waiting to be explored.",
+	"authors": [
+		"Faeunderscore!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "LGPL-3.0",
+	"icon": "assets/gaiaodyssey/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.faeunderscore.gaiaodyssey.GaiaOdyssey"
+		],
+		"client": [
+			"net.faeunderscore.gaiaodyssey.GaiaOdysseyClient"
+		],
+		"fabric-datagen": [
+			"net.faeunderscore.gaiaodyssey.GaiaOdysseyDataGenerator"
+		]
+	},
+	"mixins": [
+		"gaiaodyssey.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
