@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "gaiaodyssey:telluric_plate"
+    },
+    {
+      "item": "gaiaodyssey:telluric_plate"
+    },
+    {
+      "item": "gaiaodyssey:telluric_plate"
+    },
+    {
+      "item": "gaiaodyssey:telluric_plate"
+    }
+  ],
+  "result": {
+    "item": "gaiaodyssey:telluric_metal"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "gaiaodyssey:crystal_shard"
+    }
+  },
+  "pattern": [
+    " C ",
+    "CCC",
+    "CCC"
+  ],
+  "result": {
+    "item": "gaiaodyssey:crystal"
+  }
+}
