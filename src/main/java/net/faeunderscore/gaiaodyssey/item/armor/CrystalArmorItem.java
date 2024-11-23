@@ -1,21 +1,19 @@
 package net.faeunderscore.gaiaodyssey.item.armor;
 
-import it.unimi.dsi.fastutil.objects.ObjectOpenHashSet;
 import net.faeunderscore.gaiaodyssey.renderer.armor.CrystalArmorRenderer;
-import net.faeunderscore.gaiaodyssey.renderer.item.CrystalArmorItemRenderer;
+import net.faeunderscore.gaiaodyssey.renderer.item.CrystalArmorBootsItemRenderer;
+import net.faeunderscore.gaiaodyssey.renderer.item.CrystalArmorChestplateItemRenderer;
+import net.faeunderscore.gaiaodyssey.renderer.item.CrystalArmorHelmetItemRenderer;
+import net.faeunderscore.gaiaodyssey.renderer.item.CrystalArmorLeggingsItemRenderer;
 import net.minecraft.client.render.entity.model.BipedEntityModel;
 import net.minecraft.client.render.item.BuiltinModelItemRenderer;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.decoration.ArmorStandEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.entry.RegistryEntry;
 import org.jetbrains.annotations.Nullable;
-import org.joml.Vector3d;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.SingletonGeoAnimatable;
 import software.bernie.geckolib.animatable.client.GeoRenderProvider;
@@ -69,50 +67,19 @@ public class CrystalArmorItem extends ArmorItem implements GeoItem {
         @Override
         public @Nullable BuiltinModelItemRenderer getGeoItemRenderer() {
             if (itemRenderer == null) {
-                itemRenderer = new CrystalArmorItemRenderer();
-            }
-
-            hideAllBones();
-
-            switch (getType()) {
-                case HELMET -> showHelmetBones();
-                case CHESTPLATE -> showChestplateBones();
-                case LEGGINGS -> showLeggingsBones();
-                case BOOTS -> showBootsBones();
+                switch (getType()){
+                    case HELMET -> itemRenderer = new CrystalArmorHelmetItemRenderer();
+                    case CHESTPLATE -> itemRenderer = new CrystalArmorChestplateItemRenderer();
+                    case LEGGINGS -> itemRenderer = new CrystalArmorLeggingsItemRenderer();
+                    case BOOTS -> itemRenderer = new CrystalArmorBootsItemRenderer();
+                }
             }
 
             return itemRenderer;
         }
 
-        private void hideAllBones() {
-            itemRenderer.getGeoModel().getBone("armorHead").ifPresent(bone -> bone.setHidden(true));
-            itemRenderer.getGeoModel().getBone("armorBody").ifPresent(bone -> bone.setHidden(true));
-            itemRenderer.getGeoModel().getBone("armorLeftArm").ifPresent(bone -> bone.setHidden(true));
-            itemRenderer.getGeoModel().getBone("armorRightArm").ifPresent(bone -> bone.setHidden(true));
-            itemRenderer.getGeoModel().getBone("armorLeftLeg").ifPresent(bone -> bone.setHidden(true));
-            itemRenderer.getGeoModel().getBone("armorRightLeg").ifPresent(bone -> bone.setHidden(true));
-            itemRenderer.getGeoModel().getBone("armorLeftBoot").ifPresent(bone -> bone.setHidden(true));
-            itemRenderer.getGeoModel().getBone("armorRightBoot").ifPresent(bone -> bone.setHidden(true));
-        }
 
-        private void showHelmetBones() {
-            itemRenderer.getGeoModel().getBone("armorHead").ifPresent(bone -> bone.setHidden(false));
-        }
 
-        private void showChestplateBones() {
-            itemRenderer.getGeoModel().getBone("armorBody").ifPresent(bone -> bone.setHidden(false));
-            itemRenderer.getGeoModel().getBone("armorLeftArm").ifPresent(bone -> bone.setHidden(false));
-            itemRenderer.getGeoModel().getBone("armorRightArm").ifPresent(bone -> bone.setHidden(false));
-        }
 
-        private void showLeggingsBones() {
-            itemRenderer.getGeoModel().getBone("armorLeftLeg").ifPresent(bone -> bone.setHidden(false));
-            itemRenderer.getGeoModel().getBone("armorRightLeg").ifPresent(bone -> bone.setHidden(false));
-        }
-
-        private void showBootsBones() {
-            itemRenderer.getGeoModel().getBone("armorLeftBoot").ifPresent(bone -> bone.setHidden(false));
-            itemRenderer.getGeoModel().getBone("armorRightBoot").ifPresent(bone -> bone.setHidden(false));
-        }
     }
 }
