@@ -4,6 +4,7 @@ import it.unimi.dsi.fastutil.objects.ObjectOpenHashSet;
 import net.faeunderscore.gaiaodyssey.renderer.armor.CrystalArmorRenderer;
 import net.faeunderscore.gaiaodyssey.renderer.item.CrystalArmorItemRenderer;
 import net.minecraft.client.render.entity.model.BipedEntityModel;
+import net.minecraft.client.render.item.BuiltinModelItemRenderer;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
@@ -64,7 +65,8 @@ public class CrystalArmorItem extends ArmorItem implements GeoItem {
             return this.renderer;
         }
 
-        public GeoItemRenderer<?> getItemRenderer() {
+        @Override
+        public @Nullable BuiltinModelItemRenderer getGeoItemRenderer() {
             if (itemRenderer == null) {
                 itemRenderer = new CrystalArmorItemRenderer();
             }

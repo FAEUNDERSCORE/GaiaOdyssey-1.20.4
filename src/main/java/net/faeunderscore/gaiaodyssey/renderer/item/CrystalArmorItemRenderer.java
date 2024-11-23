@@ -11,4 +11,5 @@ public class CrystalArmorItemRenderer extends GeoItemRenderer<CrystalArmorItem> 
     public CrystalArmorItemRenderer() {
         super(new DefaultedItemGeoModel<>(Identifier.of(GaiaOdyssey.MOD_ID, "armor/crystal_armor")));
     }
+
 }
