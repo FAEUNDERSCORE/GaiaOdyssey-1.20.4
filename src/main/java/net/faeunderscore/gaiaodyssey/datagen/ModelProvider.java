@@ -24,5 +24,9 @@ public class ModelProvider extends FabricModelProvider {
         itemModelGenerator.register(GOItems.TELLURIC_METAL, Models.GENERATED);
         itemModelGenerator.register(GOItems.TELLURIC_PLATE, Models.GENERATED);
         itemModelGenerator.register(GOItems.RAW_TELLURIC, Models.GENERATED);
+        itemModelGenerator.register(GOItems.CRYSTAL_ARMOR_HELMET, Models.GENERATED);
+        itemModelGenerator.register(GOItems.CRYSTAL_ARMOR_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(GOItems.CRYSTAL_ARMOR_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(GOItems.CRYSTAL_ARMOR_BOOTS, Models.GENERATED);
     }
 }

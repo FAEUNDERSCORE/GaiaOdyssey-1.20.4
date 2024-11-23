@@ -1,6 +1,10 @@
-// 1.20.4	2024-04-28T00:14:25.0019412	Gaia Odyssey/Model Definitions
+// 1.21.1	2024-11-23T17:18:02.6167036	Gaia Odyssey/Model Definitions
+210f4bb607f941160b3efeef950545646b1d722a assets\gaiaodyssey\models\item\crystal_shard.json
+99342aafb9134345f5ef00438552616a711e35f8 assets\gaiaodyssey\models\item\crystal_armor_boots.json
+e4e01ae7ad1ec55d6475aa22d0ac041cf34b3ba4 assets\gaiaodyssey\models\item\crystal_armor_chestplate.json
+fb4959bc517dc8201f22125adcf5c9f2706fcd1e assets\gaiaodyssey\models\item\crystal_armor_helmet.json
 a4ed52b07e3d4ebf33548b2a291394f2213fad3e assets\gaiaodyssey\models\item\telluric_metal.json
 86039fa665b435b6087533e6f44d3dad281709c4 assets\gaiaodyssey\models\item\crystal.json
-b8a0ab69537fe0007e1414684953ae105d675c23 assets\gaiaodyssey\models\item\raw_telluric.json
-210f4bb607f941160b3efeef950545646b1d722a assets\gaiaodyssey\models\item\crystal_shard.json
 3bcfd5144adedf9e3443986b59d2cb787c917398 assets\gaiaodyssey\models\item\telluric_plate.json
+55f9cb3622bc0e90558fe37ca7eda2d0c1339c88 assets\gaiaodyssey\models\item\crystal_armor_leggings.json
+b8a0ab69537fe0007e1414684953ae105d675c23 assets\gaiaodyssey\models\item\raw_telluric.json

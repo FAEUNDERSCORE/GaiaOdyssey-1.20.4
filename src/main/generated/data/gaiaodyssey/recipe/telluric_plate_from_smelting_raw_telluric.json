@@ -7,5 +7,7 @@
   "ingredient": {
     "item": "gaiaodyssey:raw_telluric"
   },
-  "result": "gaiaodyssey:telluric_plate"
+  "result": {
+    "id": "gaiaodyssey:telluric_plate"
+  }
 }
