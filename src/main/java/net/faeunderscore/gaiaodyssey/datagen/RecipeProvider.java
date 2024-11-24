@@ -9,15 +9,17 @@ import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
 
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 public class RecipeProvider extends FabricRecipeProvider {
     private static List<ItemConvertible> TELLURIC_SMELTABLES = List.of(GOItems.RAW_TELLURIC);
 
-    public RecipeProvider(FabricDataOutput output) {
-        super(output);
+    public RecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+        super(output, registriesFuture);
     }
 
     @Override
@@ -30,7 +32,7 @@ public class RecipeProvider extends FabricRecipeProvider {
                 .pattern("CCC")
                 .input('C', GOItems.CRYSTAL_SHARD)
                 .criterion(hasItem(GOItems.CRYSTAL_SHARD), conditionsFromItem(GOItems.CRYSTAL_SHARD))
-                .offerTo(exporter, new Identifier(getRecipeName(GOItems.CRYSTAL)));
+                .offerTo(exporter, Identifier.of(getRecipeName(GOItems.CRYSTAL)));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, GOItems.TELLURIC_METAL, 1)
                 .input(GOItems.TELLURIC_PLATE, 4)

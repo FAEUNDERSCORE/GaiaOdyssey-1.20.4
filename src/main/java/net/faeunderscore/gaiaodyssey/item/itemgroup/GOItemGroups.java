@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 public class GOItemGroups {
 
     public static final ItemGroup GO_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(GaiaOdyssey.MOD_ID, "go_item"),
+            Identifier.of(GaiaOdyssey.MOD_ID, "go_item"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.gaiaodyssey_item"))
                     .icon(() -> new ItemStack(GOItems.CRYSTAL)).entries((displayContext, entries) -> {
                         entries.add(GOItems.CRYSTAL);
@@ -21,6 +21,10 @@ public class GOItemGroups {
                         entries.add(GOItems.TELLURIC_METAL);
                         entries.add(GOItems.TELLURIC_PLATE);
                         entries.add(GOItems.RAW_TELLURIC);
+                        entries.add(GOItems.CRYSTAL_ARMOR_HELMET);
+                        entries.add(GOItems.CRYSTAL_ARMOR_CHESTPLATE);
+                        entries.add(GOItems.CRYSTAL_ARMOR_LEGGINGS);
+                        entries.add(GOItems.CRYSTAL_ARMOR_BOOTS);
                     }).build());
 
     public static void registerItemGroups(){

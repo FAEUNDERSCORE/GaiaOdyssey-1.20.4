@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_crystal_shard": {
+    "has_raw_telluric": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "gaiaodyssey:crystal_shard"
-            ]
+            "items": "gaiaodyssey:raw_telluric"
           }
         ]
       },
@@ -15,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:crystal"
+        "recipe": "minecraft:telluric_plate_from_smelting_raw_telluric"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -23,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_crystal_shard"
+      "has_raw_telluric"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:crystal"
+      "minecraft:telluric_plate_from_smelting_raw_telluric"
     ]
   }
 }
