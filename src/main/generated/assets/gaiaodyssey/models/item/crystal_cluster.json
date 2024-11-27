@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "gaiaodyssey:item/crystal_armor_leggings"
+    "layer0": "gaiaodyssey:item/crystal_cluster"
   }
 }

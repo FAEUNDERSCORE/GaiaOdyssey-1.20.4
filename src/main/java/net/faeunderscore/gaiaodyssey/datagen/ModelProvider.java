@@ -25,14 +25,16 @@ public class ModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(GOItems.CRYSTAL_CLUSTER, Models.GENERATED);
+
+        itemModelGenerator.register(GOItems.FOUNDRY_BASE, Models.GENERATED);
+        itemModelGenerator.register(GOItems.FOUNDRY_BLOCK, Models.GENERATED);
+        itemModelGenerator.register(GOItems.FOUNDRY_FURNACE, Models.GENERATED);
+
         itemModelGenerator.register(GOItems.CRYSTAL, Models.GENERATED);
         itemModelGenerator.register(GOItems.CRYSTAL_SHARD, Models.GENERATED);
         itemModelGenerator.register(GOItems.TELLURIC_METAL, Models.GENERATED);
         itemModelGenerator.register(GOItems.TELLURIC_PLATE, Models.GENERATED);
         itemModelGenerator.register(GOItems.RAW_TELLURIC, Models.GENERATED);
-        itemModelGenerator.register(GOItems.CRYSTAL_ARMOR_HELMET, Models.GENERATED);
-        itemModelGenerator.register(GOItems.CRYSTAL_ARMOR_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(GOItems.CRYSTAL_ARMOR_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(GOItems.CRYSTAL_ARMOR_BOOTS, Models.GENERATED);
     }
 }

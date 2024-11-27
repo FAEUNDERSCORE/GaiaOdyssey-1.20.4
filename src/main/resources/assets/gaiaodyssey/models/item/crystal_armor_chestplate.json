@@ -1,0 +1,6 @@
+{
+  "parent": "gaiaodyssey:item/default_armor_item",
+  "textures": {
+    "particle": "gaiaodyssey:item/crsytal_armor_chestplate"
+  }
+}

@@ -30,6 +30,7 @@ public class GOItemGroups {
                         entries.add(GOBlocks.FOUNDRY_BASE);
                         entries.add(GOBlocks.FOUNDRY_BLOCK);
                         entries.add(GOBlocks.FOUNDRY_FURNACE);
+                        entries.add(GOItems.CRYSTAL_HAMMER);
                     }).build());
 
     public static void registerItemGroups(){

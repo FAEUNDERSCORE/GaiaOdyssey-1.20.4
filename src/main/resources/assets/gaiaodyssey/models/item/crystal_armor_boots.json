@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "gaiaodyssey:item/default_armor_item",
   "textures": {
     "layer0": "gaiaodyssey:item/crystal_armor_boots"
   }

@@ -1,7 +1,7 @@
-// 1.21.1	2024-11-27T20:42:36.7553486	Gaia Odyssey/Recipes
-8300938985d72bfc1799dba8e93a9eded4755513 data\gaiaodyssey\advancement\recipes\misc\telluric_metal.json
-ee7dbce89932adbcd53456e56dba5bcfdfffd0e4 data\gaiaodyssey\advancement\recipes\misc\telluric_plate_from_smelting_raw_telluric.json
-9557827ee1562f72fffceb7435880289790339f2 data\gaiaodyssey\recipe\telluric_plate_from_smelting_raw_telluric.json
-45d801ea8296f90baf337aeb8b9a3ae0992837c1 data\gaiaodyssey\recipe\telluric_metal.json
-03202207ef88a2ac829425f355f8a7f82e2d9973 data\gaiaodyssey\advancement\recipes\misc\crystal.json
+// 1.21.1	2024-11-27T21:20:08.1061497	Gaia Odyssey/Recipes
 b4940c5ddc6161ddf1b0a86f30cbe5ef53011559 data\gaiaodyssey\recipe\crystal.json
+03202207ef88a2ac829425f355f8a7f82e2d9973 data\gaiaodyssey\advancement\recipes\misc\crystal.json
+9557827ee1562f72fffceb7435880289790339f2 data\gaiaodyssey\recipe\telluric_plate_from_smelting_raw_telluric.json
+ee7dbce89932adbcd53456e56dba5bcfdfffd0e4 data\gaiaodyssey\advancement\recipes\misc\telluric_plate_from_smelting_raw_telluric.json
+8300938985d72bfc1799dba8e93a9eded4755513 data\gaiaodyssey\advancement\recipes\misc\telluric_metal.json
+45d801ea8296f90baf337aeb8b9a3ae0992837c1 data\gaiaodyssey\recipe\telluric_metal.json

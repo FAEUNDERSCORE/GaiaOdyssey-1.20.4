@@ -1,3 +1,6 @@
 {
-  "parent": "gaiaodyssey:block/foundry_furnace"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "gaiaodyssey:item/foundry_furnace"
+  }
 }
