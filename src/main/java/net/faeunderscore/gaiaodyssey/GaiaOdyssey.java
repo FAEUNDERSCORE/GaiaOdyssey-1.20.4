@@ -2,6 +2,7 @@ package net.faeunderscore.gaiaodyssey;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.faeunderscore.gaiaodyssey.block.GOBlocks;
 import net.faeunderscore.gaiaodyssey.item.GOItems;
 import net.faeunderscore.gaiaodyssey.item.itemgroup.GOItemGroups;
 import org.slf4j.Logger;
@@ -15,5 +16,6 @@ public class GaiaOdyssey implements ModInitializer {
 	public void onInitialize() {
 		GOItemGroups.registerItemGroups();
 		GOItems.registerItems();
+		GOBlocks.registerModBlocks();
 	}
 }

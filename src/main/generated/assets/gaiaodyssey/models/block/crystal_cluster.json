@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "gaiaodyssey:block/crystal_cluster"
+  }
+}

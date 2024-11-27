@@ -2,9 +2,7 @@ package net.faeunderscore.gaiaodyssey.item;
 
 import net.faeunderscore.gaiaodyssey.GaiaOdyssey;
 import net.faeunderscore.gaiaodyssey.item.armor.CrystalArmorItem;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.ArmorMaterials;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;

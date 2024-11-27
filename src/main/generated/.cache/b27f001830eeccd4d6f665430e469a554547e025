@@ -1,1 +1,5 @@
-// 1.21.1	2024-11-23T17:18:02.6167036	Gaia Odyssey/Block Loot Tables
+// 1.21.1	2024-11-27T20:42:36.7583515	Gaia Odyssey/Block Loot Tables
+76eb4e869942f209c1749f1ebd4c33be3637ace5 data\gaiaodyssey\loot_table\blocks\foundry_base.json
+cf164a5bcb128a3122d5929d78ca16e8b5b86ca3 data\gaiaodyssey\loot_table\blocks\foundry_furnace.json
+503cc82864458c584b1bccbb7189efd497f51aad data\gaiaodyssey\loot_table\blocks\crystal_cluster.json
+4a2017e3defa10d4c3c399636c3536c5cfd2fc6a data\gaiaodyssey\loot_table\blocks\foundry_block.json

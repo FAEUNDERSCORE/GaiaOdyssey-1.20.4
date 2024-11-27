@@ -5,5 +5,10 @@
   "item.gaiaodyssey.telluric_plate": "Telluric Plate",
   "item.gaiaodyssey.raw_telluric": "Raw Telluric",
 
+  "block.gaiaodyssey.crystal_cluster": "Crystal Cluster",
+  "block.gaiaodyssey.foundry_base": "Foundry Base",
+  "block.gaiaodyssey.foundry_block": "Foundry Block",
+  "block.gaiaodyssey.foundry_furnace": "Foundry Furnace",
+
   "itemGroup.gaiaodyssey_item": "Gaia Odyssey Item Group"
 }

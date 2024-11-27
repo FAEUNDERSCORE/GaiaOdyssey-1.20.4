@@ -2,6 +2,7 @@ package net.faeunderscore.gaiaodyssey.item.itemgroup;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.faeunderscore.gaiaodyssey.GaiaOdyssey;
+import net.faeunderscore.gaiaodyssey.block.GOBlocks;
 import net.faeunderscore.gaiaodyssey.item.GOItems;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -25,6 +26,10 @@ public class GOItemGroups {
                         entries.add(GOItems.CRYSTAL_ARMOR_CHESTPLATE);
                         entries.add(GOItems.CRYSTAL_ARMOR_LEGGINGS);
                         entries.add(GOItems.CRYSTAL_ARMOR_BOOTS);
+                        entries.add(GOBlocks.CRYSTAL_CLUSTER);
+                        entries.add(GOBlocks.FOUNDRY_BASE);
+                        entries.add(GOBlocks.FOUNDRY_BLOCK);
+                        entries.add(GOBlocks.FOUNDRY_FURNACE);
                     }).build());
 
     public static void registerItemGroups(){

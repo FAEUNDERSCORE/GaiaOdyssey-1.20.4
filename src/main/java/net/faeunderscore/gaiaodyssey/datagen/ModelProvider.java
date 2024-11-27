@@ -2,10 +2,13 @@ package net.faeunderscore.gaiaodyssey.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.faeunderscore.gaiaodyssey.block.GOBlocks;
 import net.faeunderscore.gaiaodyssey.item.GOItems;
+import net.minecraft.block.Block;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.Item;
 
 public class ModelProvider extends FabricModelProvider {
     public ModelProvider(FabricDataOutput output) {
@@ -14,7 +17,10 @@ public class ModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-
+        blockStateModelGenerator.registerAmethyst(GOBlocks.CRYSTAL_CLUSTER);
+        blockStateModelGenerator.registerSimpleCubeAll(GOBlocks.FOUNDRY_BASE);
+        blockStateModelGenerator.registerSimpleCubeAll(GOBlocks.FOUNDRY_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(GOBlocks.FOUNDRY_FURNACE);
     }
 
     @Override
